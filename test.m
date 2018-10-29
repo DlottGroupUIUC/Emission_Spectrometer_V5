@@ -1,6 +1,6 @@
 clear
 clc
-
+%This version specifically for higher bin resolution data (i.e ~30).
 %Load files to analyze
 [r,p]=uigetfile('*3.txt;*.tdms;*short.txt','multiselect','on');
 
@@ -14,7 +14,7 @@ for q=1:length(r);
     
     data=importdata(fullfile(p,r{q}));
     
-    while size(data,1)>70
+    while size(data,1)>130
         
         data(1,:)=[];
         
