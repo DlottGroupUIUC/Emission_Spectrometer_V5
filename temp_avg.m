@@ -1,6 +1,6 @@
 clear
 clc
-
+ 
 %Load files to analyze
 [r,p]=uigetfile('*3.txt;*.tdms;*short.txt','multiselect','on');
 

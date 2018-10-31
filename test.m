@@ -14,7 +14,7 @@ for q=1:length(r);
     
     data=importdata(fullfile(p,r{q}));
     
-    while size(data,1)>130
+    while size(data,1)>134
         
         data(1,:)=[];
         
@@ -34,5 +34,7 @@ dlg_title='Saved file name';
 name=[cell2mat(inputdlg(prompt,dlg_title))];
 
 text_name=[name,' avg_spec_rad_short.txt'];
-
+wd = pwd;
+cd(p);
 dlmwrite(text_name,mean_data,' ');
+cd(wd);
