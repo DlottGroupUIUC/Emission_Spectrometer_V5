@@ -325,7 +325,7 @@ else
     check_load=load_checker_LS;
 end
 
-if strcmp(check_load,'Yes')
+if strcmp(check_load,'Yes');
     %clear out past data
     clear clear central_data
     
