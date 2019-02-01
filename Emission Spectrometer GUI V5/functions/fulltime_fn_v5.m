@@ -43,7 +43,7 @@ sden=wden(trigs,'heursure','s','mln',3,'db3'); %denoise the signal
 [z zloc]=max(sden); %identify the maximum value
 zhalf=find(sden>=z*.9,1,'first');
 z=trigt(zhalf)*1e9;   %report correction for time 0 value in nanoseconds
-toff=47.9-z;    %time correction offset
+toff=24-z;    %time correction offset
 time=((time.*10^9)+toff)';
 %  clear file file2 zloc raw2 sden sden2 trigs z hm trigt;
 
