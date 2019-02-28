@@ -1,4 +1,4 @@
-function [ model,Temperature,Temperature_unc,emissivity,emissivity_unc ] = spec_rad_temp_fit2_v4( wavelength,spectral_radiance,starting_temperature, idx_of_wavelengths_to_exclude)
+function [ model,Temperature,Temperature_unc,emissivity,emissivity_unc ] = spec_rad_temp_fit2_v5( wavelength,spectral_radiance,starting_temperature, idx_of_wavelengths_to_exclude)
 %spec_rad_temp_fit Function to solve for the temperature given a
 %temperature
 
