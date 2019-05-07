@@ -263,9 +263,9 @@ if table_data{file_idx,3} == 'True'
         end
     end
     
-    %Eliminate fits where the uncertainty is greater than 10%
-    spec_emiss(spec_T_unc>.1*spec_T)=NaN;
-    spec_T(spec_T_unc>.1*spec_T)=NaN;
+    %Eliminate fits where the uncertainty is greater than 5%
+    spec_emiss(spec_T_unc>.05*spec_T)=NaN;
+    spec_T(spec_T_unc>.05*spec_T)=NaN;
     
     
     %Update tables
@@ -340,9 +340,9 @@ for idx=1:length(file_list);
             end
         end
         
-        %Eliminate fits where the uncertainty is greater than 10%
-        spec_emiss(spec_T_unc>.1*spec_T)=NaN;
-        spec_T(spec_T_unc>.1*spec_T)=NaN;
+        %Eliminate fits where the uncertainty is greater than 5%
+        spec_emiss(spec_T_unc>.05*spec_T)=NaN;
+        spec_T(spec_T_unc>.05*spec_T)=NaN;
         
         
         
